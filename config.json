@@ -16,8 +16,8 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "ARIF-BABU",
-    "PREFIX": "#",
+    "BOTNAME": "नोबिता बाबू ",
+    "PREFIX": "/",
     "ADMINBOT": [
         "100007994598695"
     ],
