@@ -7,7 +7,7 @@ module.exports.config = {
     name: "fbautodownload",
     version: "1.0.0",
     hasPermssion: 0,
-    credits: "Priyansh Rajput",
+    credits: "ARIF-BABU",
     description: "Downloads Facebook video from HD link provided",
     commandCategory: "utility",
     usages: "[Facebook video URL]",
@@ -36,7 +36,7 @@ module.exports.handleEvent = async function({ api, event }) {
                 const attachment = fs.createReadStream(tempFilePath);
                 await api.sendMessage({
                     attachment,
-                    body: "Here's the video you requested:"
+                    body: "𝐘 𝐋𝐎 𝐀𝐀𝐏 𝐊𝐀 𝐕𝐈𝐃𝐄𝐎 ♥️😘"
                 }, event.threadID, (err) => {
                     if (err) console.error("Error sending message:", err);
                 });
