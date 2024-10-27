@@ -7,7 +7,7 @@ module.exports.config = {
     name: "igautodownload",
     version: "1.0.0",
     hasPermssion: 0,
-    credits: "Priyansh Rajput",
+    credits: "ARIF-BABU",
     description: "Downloads Instagram video from HD link provided",
     commandCategory: "utility",
     usages: "[Instagram video URL]",
@@ -26,7 +26,7 @@ module.exports.handleEvent = async function({ api, event }) {
             try {
 
             const videoInfo = await instagramGetUrl(event.body);
-            const hdLink = videoInfo.url_list[0];
+            const hdLink = videoInfo.video[0].video;
             const response = await axios.get(hdLink, { responseType: 'stream' });
             const tempFilePath = tempy.file({ extension: 'mp4' });
             const writer = fs.createWriteStream(tempFilePath);
@@ -36,7 +36,7 @@ module.exports.handleEvent = async function({ api, event }) {
                 const attachment = fs.createReadStream(tempFilePath);
                 await api.sendMessage({
                     attachment,
-                    body: "Here's the video you requested:"
+                    body: "𝐘 𝐋𝐎 𝐀𝐀𝐏 𝐊𝐀 𝐕𝐈𝐃𝐄𝐎 ♥️😘"
                 }, event.threadID, (err) => {
                     if (err) console.error("Error sending message:", err);
                 });
