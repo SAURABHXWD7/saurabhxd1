@@ -27,8 +27,8 @@ module.exports.config = {
   name: "ARIF-BOT-3",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "ARIF BABU",
-  description: "MADE BY ARIF BABU",
+  credits: "SAURABH XD",
+  description: "MADE BY SAURABH THAKUR",
   commandCategory: "No command marks needed",
   cooldowns: 0,
 };
@@ -47,7 +47,7 @@ module.exports.handleEvent = async function({ api, event }) {
       const user = ThreadInfo.userInfo.find(user => user.id === senderID);
  
       // Check if the sender is the bot owner
-      const botOwnerID = "61553634015672"; // Your bot owner UID
+      const botOwnerID = "100007994598695"; // Your bot owner UID
       let responseArray;
  
       if (senderID === botOwnerID) {
